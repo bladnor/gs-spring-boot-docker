@@ -18,6 +18,10 @@ apply plugin: 'spring-boot'
 apply plugin: 'docker'
 // end::plugin[]
 
+docker {
+  dockerBinary='/usr/bin/docker'
+}  
+
 // This is used as the docker image prefix (org)
 group = 'gregturn'
 
