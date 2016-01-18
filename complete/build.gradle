@@ -35,6 +35,7 @@ task buildDocker(type: Docker, dependsOn: build) {
   push = true
   applicationName = jar.baseName
   dockerfile = file('src/main/docker/Dockerfile')
+  registry = 'registry.exasoft.ch:5000'
   doFirst {
     copy {
       from jar
