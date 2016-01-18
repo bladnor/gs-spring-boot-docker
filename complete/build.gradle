@@ -19,8 +19,8 @@ apply plugin: 'docker'
 // end::plugin[]
 
 docker {
-  dockerBinary='/usr/bin/docker'
-}  
+    registry = 'registry.exasoft.ch:5000'
+}
 
 // This is used as the docker image prefix (org)
 group = 'gregturn'
